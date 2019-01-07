@@ -32,6 +32,18 @@ For OSX the version of the lib used to compile is hardcoded. If your installatio
 For windows7 [@tallforasmurf](https://github.com/tallforasmurf) compiled a python 3.4 compatible version of the pyhunspell==0.3.3 package available here: http://pyhunspell.latinier.fr
 (Warning: Those windows compiled packages are not reviewed or tested). It could work for other windows version or python versions.
 
+For Ubuntu you should consider using the --user option or check the permissions.
+```
+python -m pip install --user hunspell
+```
+Or create virtual environment to install the package:
+```
+sudo  apt-get install python3-venv
+python3 -m venv env
+source ./env/bin/activate 
+python -m pip install hunspell
+```
+
 # Documentation
 
 [Go here for some documentation](https://github.com/blatinier/pyhunspell/wiki/Documentation)
